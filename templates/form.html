@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} The Form {% endblock %}
+
+{% block content%}
+    <h1>Please fill out the parameters</h1>
+    <form method="POST" action="/result">
+        <input type="text" name="accKey">
+        <input type="text" name="ip">
+        <input type="submit" value="Request">
+    </form>
+{% endblock %}
